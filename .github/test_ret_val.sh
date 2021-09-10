@@ -4,7 +4,7 @@ echo
 req_val=${1:-0} 
 shift 1
 
-output=$(./a.out $@)
+output=$(./main $@)
 
 
 if [ $? -eq $(((256+$req_val)%256)) ] ; then
